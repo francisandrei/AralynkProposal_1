@@ -1,0 +1,106 @@
+<?php
+
+namespace Database\Seeders;
+
+use App\Models\Skill;
+use Illuminate\Database\Seeder;
+
+// Starter skills (students and businesses can also type their own)
+class SkillSeeder extends Seeder
+{
+    public function run(): void
+    {
+        $names = [
+            'PHP',
+            'HTML/CSS',
+            'JavaScript',
+            'MySQL',
+            'MS Word',
+            'MS Excel',
+            'Graphic Design',
+            'Photo/Video Editing',
+            'Social Media Management',
+            'Content Writing',
+            'Customer Service',
+            'Cashiering',
+            'Cooking / Food Prep',
+            'Tutoring',
+            'Data Encoding',
+            'Event Assistance',
+            'Farm Work',
+            'Computer Repair',
+            'Communication',
+            'Basic Bookkeeping',
+            'Python',
+            'Java',
+            'C# / .NET',
+            'Web Design',
+            'Mobile App Development',
+            'Networking',
+            'Database Management',
+            'Typing',
+            'MS PowerPoint',
+            'Canva',
+            'Copywriting',
+            'Translation',
+            'Online Selling',
+            'Sales / Selling',
+            'Marketing',
+            'Teamwork',
+            'Time Management',
+            'Leadership',
+            'Public Speaking',
+            'Problem Solving',
+            'Baking',
+            'Barista / Coffee Making',
+            'Food Service / Waiting Tables',
+            'Food Safety',
+            'Teaching / Lesson Planning',
+            'Child Care',
+            'Event Hosting / Emcee',
+            'Photography',
+            'Videography',
+            'Drawing / Arts',
+            'Planting / Harvesting',
+            'Livestock / Animal Handling',
+            'Veterinary Assistance',
+            'Crop Management',
+            'Irrigation / Farm Machinery',
+            'Pest Management',
+            'Soil Sampling',
+            'Surveying / Mapping',
+            'AutoCAD / Drafting',
+            'Food Processing',
+            'Quality Control',
+            'Packaging',
+            'Inventory Management',
+            'Warehouse Work',
+            'Driving',
+            'Motorcycle Delivery',
+            'Carpentry',
+            'Electrical Work',
+            'Plumbing',
+            'Welding',
+            'Painting',
+            'Cleaning / Housekeeping',
+            'Laundry',
+            'Sewing',
+            'Hair / Beauty',
+            'Massage',
+            'First Aid',
+            'Research / Data Gathering',
+            'Survey / Interviewing',
+            'Community Outreach',
+            'Development Communication',
+            'Radio / Broadcasting',
+            'Writing / Editing',
+            'Customer Chat Support',
+            'Bookkeeping',
+            'Gardening / Landscaping',
+        ];
+
+        foreach ($names as $item) {
+            Skill::firstOrCreate(['name' => $item]);
+        }
+    }
+}
